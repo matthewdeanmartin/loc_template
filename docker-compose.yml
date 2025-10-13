@@ -1,7 +1,7 @@
-version: '3.4'
+version: "3.4"
 services:
-  alpine:
-    image: alpine/make
-    volumes:
-      - .:/opt/app
-    working_dir: /opt/app
+    alpine:
+        image: alpine/make
+        volumes:
+            - .:/opt/app
+        working_dir: /opt/app
