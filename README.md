@@ -25,48 +25,48 @@ pre-commit run --all-files
 
 Security features
 
--   bandit
--   detect-secrets (via pre-commit)
--   .gitignore
--   detect-aws-credentials via pre-commit
--   detect-private-key via pre-commit
+- bandit
+- detect-secrets (via pre-commit)
+- .gitignore
+- detect-aws-credentials via pre-commit
+- detect-private-key via pre-commit
 
 Quality Features
 
--   flake8
+- flake8
 
 Collaboration Features
 
--   isort, black & .editorconfig so teams formatting is the same
--   various minor generic format tools via pre-commit
+- isort, black & .editorconfig so teams formatting is the same
+- various minor generic format tools via pre-commit
 
 ## TODO
 
--   flake8 & isort are double configured (setup.cfg and dotfiles)
--   security
-    -   encourage .env usage for secrets
-    -   safety
-    -   gitsecrets (bash based)
--   quality
-    -   pylint
-    -   sonar
-    -   mypy
-    -   others, but most benefit comes from pylint, sonar, mypy
--   packaging
-    -   preferably with pyproject.toml on grounds that setup.py is a security hazard.
-    -   or setup.cfg only
-    -   or Dockerfile based
--   tests
-    -   pytest
-    -   tox, vermin
-    -   coverage
--   mutating
-    -   version bumping
-    -   upgrade to latest python
-    -   pypgrade, 2to3
--   dependency management
-    -   version pinning
-    -   safety (also a security feature)
-    -   upgrading
-    -   lock files
--   a default build script (although something that works for everyone will be hard)
+- flake8 & isort are double configured (setup.cfg and dotfiles)
+- security
+    - encourage .env usage for secrets
+    - safety
+    - gitsecrets (bash based)
+- quality
+    - pylint
+    - sonar
+    - mypy
+    - others, but most benefit comes from pylint, sonar, mypy
+- packaging
+    - preferably with pyproject.toml on grounds that setup.py is a security hazard.
+    - or setup.cfg only
+    - or Dockerfile based
+- tests
+    - pytest
+    - tox, vermin
+    - coverage
+- mutating
+    - version bumping
+    - upgrade to latest python
+    - pypgrade, 2to3
+- dependency management
+    - version pinning
+    - safety (also a security feature)
+    - upgrading
+    - lock files
+- a default build script (although something that works for everyone will be hard)
